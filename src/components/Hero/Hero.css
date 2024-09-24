@@ -3,9 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background-image: url("https://i.imgur.com/vdEcC6F.jpg") ;
-  background-size: cover;
-  background-position: bottom;
+  background-image: linear-gradient(180deg, #96E6B3, #f5fff1);
   color: #fff;
   
 }

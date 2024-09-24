@@ -1,15 +1,15 @@
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #568259;
+  background-color: #96E6B3;
 }
 
 .logo {
   font-size: 33px;
   font-weight: bold;
-  color: #96E6B3; /* Neon blue */
+  color: #2ba84a; /* Neon blue */
 }
 
 ul {
@@ -19,7 +19,8 @@ ul {
 }
 
 li {
-  color: #CCFCCB;
+  font-size: 1.rem;
+  color: darkgreen;
   cursor: pointer;
   transition: color 0.3s ease;
 }

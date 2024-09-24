@@ -1,11 +1,133 @@
+/* About Page Layout */
 .about-page {
-    padding: 50px;
-    color: #fff;
-    background-color: #181818;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #0ff;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  padding: 40px;
+  background-color: #f5fff1;
+}
+
+/* Introduction Section */
+.about-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  background-color: #96E6B3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  width: 50%;
+  padding: 20px;
+}
+
+.text-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-content p {
+  font-size: 18px;
+  color: #555;
+}
+
+.image-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Offer Section */
+.offer-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.offer-item {
+  background-color: #96E6B3;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer-item img {
+  margin-bottom: 15px;
+}
+
+.offer-item h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.offer-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Trust Section */
+.trust-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.trust-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.trust-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.trust-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trust-list li {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.icons {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Stay Connected Section */
+.stay-connected {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.stay-connected h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #0073e6;
+}
+
+.social-icons a:hover {
+  color: #005bb5;
+}

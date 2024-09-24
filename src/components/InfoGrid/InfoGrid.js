@@ -1,14 +1,14 @@
 import React from 'react';
-import InfoCircle from '../InfoCircle/InfoCircle';
+import InfoRectangle from '../InfoCircle/InfoRectangle';
 import './InfoGrid.css';
 
 const InfoGrid = () => {
   return (
     <section className="info-grid">
-      <InfoCircle title="Feature 1" />
-      <InfoCircle title="Feature 2" />
-      <InfoCircle title="Feature 3" />
-      <InfoCircle title="Feature 4" />
+      <InfoRectangle title="Feature 1" />
+      <InfoRectangle title="Feature 2" />
+      <InfoRectangle title="Feature 3" />
+      <InfoRectangle title="Feature 4" />
     </section>
   );
 };
