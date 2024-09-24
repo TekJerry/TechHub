@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-image: url("https://i.imgur.com/vdEcC6F.jpg") ;
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+  
+}
+
+.hero-content {
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.hero-h1 {
+  font-size: 6rem;
+  color: #F1FFFA;
+  margin-top: -10px;
+}
+
+.hero-sub{
+  font-size: 3rem;
+  color: #96E6B3;
+  margin-top: -50px;
+}
+
+button {
+  background-color: #CCFCCB;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #96E6B3;
+}
