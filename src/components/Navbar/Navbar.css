@@ -1,35 +1,69 @@
+/* Navbar styling remains the same */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #96E6B3;
+  background-color: #023e8a;
 }
 
 .logo {
-  font-size: 33px;
-  font-weight: bold;
-  color: #2ba84a; /* Neon blue */
+  font-size: 2.5rem;
+  color: white;
 }
 
-ul {
-  list-style: none;
+nav ul {
   display: flex;
-  gap: 20px;
+  list-style-type: none;
 }
 
-li {
-  font-size: 1.rem;
-  color: darkgreen;
-  cursor: pointer;
-  transition: color 0.3s ease;
+nav ul li {
+  position: relative;
 }
 
-li:hover {
-  color: #f80; /* Neon orange */
-}
-
-a {
+nav ul li a {
+  color: #fff8f0;
   text-decoration: none;
-  color: inherit;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #fff8f0;
+  border-radius: 5px;
+  color:#023e8a;
+}
+
+/* Dropdown menu styling for vertical layout */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  position: absolute;
+  top: 40px; 
+  left: 0;
+  background-color: #fff8f0;
+  padding: 0;
+  margin: 0;
+  box-shadow: 4px 4px 18px #fff8f0;
+  width: 200px;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  padding: -5px -10px; /* Reduce padding */
+  line-height: 1.5;  /* Adjust line-height for tighter spacing */
+  color: #023e8a;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #023e8a;
+  color: #fff8f0;
+  border-radius: 0 0px 0px 0px;
 }

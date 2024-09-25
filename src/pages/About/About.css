@@ -2,8 +2,7 @@
 .about-page {
   font-family: 'Arial', sans-serif;
   padding: 40px;
-  background-color: #f5fff1;
-}
+  background-image: linear-gradient(180deg, #023e8a, #00b4d8, white);}
 
 /* Introduction Section */
 .about-intro {
@@ -11,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
-  background-color: #96E6B3;
+  background-color: #fbfefb;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -54,10 +53,10 @@
 }
 
 .offer-item {
-  background-color: #96E6B3;
+  background-color: #fbfefb;
   padding: 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 

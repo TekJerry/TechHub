@@ -7,7 +7,7 @@ const InfoRectangle = () => {
   return (
     <div className="info-rectangle">
       <div className="image-container">
-        <img src="https://via.placeholder.com/500x250" alt="Service" />
+        <img src="https://i.imgur.com/6AoI2In.jpg" alt="Service" />
         <div className="image-title">
           <h3>Service Title</h3>
         </div>
