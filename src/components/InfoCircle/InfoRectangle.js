@@ -1,22 +1,13 @@
-// InfoRectangle.js
-
 import React from 'react';
 import './InfoRectangle.css';
 
-const InfoRectangle = () => {
+const InfoRectangle = ({ image, title, description }) => {
   return (
     <div className="info-rectangle">
-      <div className="image-container">
-        <img src="https://i.imgur.com/6AoI2In.jpg" alt="Service" />
-        <div className="image-title">
-          <h3>Service Title</h3>
-        </div>
-      </div>
-      <div className="description">
-        <p>
-          This is a description of the service, explaining its features, benefits, 
-          and any relevant information you want to share with your users.
-        </p>
+      <img src={image} alt={title} className="info-image" />
+      <div className="info-details">
+        <h3 className="info-title">{title}</h3>
+        <p className="info-description">{description}</p>
       </div>
     </div>
   );
