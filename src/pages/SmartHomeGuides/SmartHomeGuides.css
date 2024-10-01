@@ -1,0 +1,19 @@
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop view */
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .guide-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .guide-grid {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  

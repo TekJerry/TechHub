@@ -1,11 +1,81 @@
-.features-page {
-    padding: 50px;
-    color: #fff;
-    background-color: #282828;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #0ff;
-  }
-  
+.featuresPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero Section */
+.featuresHero {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-image: linear-gradient(180deg, #023e8a, #00b4d8, white);
+  text-align: center;
+  width: 100%;
+  height: 25vh;
+}
+
+.featuresHero h1 {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.featuresHero p {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/* Feature Section */
+.featureSection {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Feature Image and Text Container */
+.featureImageContainer {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.featureImageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.featureImageContainer h2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.featureSection p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.featureSection button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.featureSection button:hover {
+  background-color: #0056b3;
+}
