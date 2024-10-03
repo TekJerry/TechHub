@@ -2,28 +2,30 @@ import React from 'react';
 import InfoRectangle from '../../components/InfoCircle/InfoRectangle.js';
 import Hero from "../../components/Hero/Hero.js"
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const infoData = [
     {
       title: 'Smart Home Setup',
       image: 'https://i.imgur.com/gvCIteV.jpg',
-      description: 'Learn how to set up your smart home with ease.',
+      description: 'Our Smart Home Setup guides walk you through setting up smart lights, thermostats, cameras, and security systems. We provide step-by-step instructions.',
+      route: "/features/smarthomeguides",
     },
     {
-      title: 'Best Devices',
+      title: 'In-depth Product Reviews',
       image: 'https://i.imgur.com/4wAto8k.jpg',
-      description: 'Discover the top devices for smart homes in 2024.',
+      description: 'Our in-depth product reviews help you choose the best gadgets for your home by comparing usability, cost, and performance.',
     },
     {
       title: 'Video Tutorials',
       image: 'https://i.imgur.com/7sRtYCd.jpg',
-      description: 'Watch our step-by-step video guides for installations.',
+      description: 'Our tutorials cover everything from setting up, troubleshooting, and optimizing your smart home devices, with step-by-step guides and video tutorials.',
     },
     {
       title: 'Sales and Deals',
       image: 'https://i.imgur.com/M3WA9Sj.jpg',
-      description: 'Find the best sales and discounts on Amazon today.',
+      description: 'Through our partnerships with brands, we offer exclusive deals and sales on popular smart home devices. Stay updated on the latest discounts, especially for Amazon’s best-selling products.',
     }
   ];
 
@@ -32,13 +34,16 @@ const Home = () => {
     <Hero />
     <div className="info-grid">
       {infoData.map((item, index) => (
+        <Link to={item.route} key={index} className='info-link'>
         <InfoRectangle 
           key={index}
           title={item.title}
           image={item.image}
           description={item.description}
         />
+        </Link>
       ))}
+      
     </div>
     </div>
   );

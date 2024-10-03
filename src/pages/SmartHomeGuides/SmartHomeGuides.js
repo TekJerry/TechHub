@@ -1,32 +1,39 @@
 import React from 'react';
-import GuideCard from '../../components/GuideCard/GuideCard.js';
-import '../SmartHomeGuides/SmartHomeGuides.css';
+import { Link } from 'react-router-dom';
+import './SmartHomeGuides.css';
 
 const SmartHomeGuides = () => {
-  const guides = [
-    { 
-      image: 'path-to-image-1.jpg', 
-      title: 'Setting Up Smart Lights', 
-      description: 'Learn how to set up smart lights in your home step by step.' 
-    },
-    { 
-      image: 'path-to-image-2.jpg', 
-      title: 'Smart Thermostat Installation', 
-      description: 'A comprehensive guide to installing smart thermostats.' 
-    },
-    // Add more guide objects here
-  ];
-
   return (
-    <div className="guide-grid">
-      {guides.map((guide, index) => (
-        <GuideCard
-          key={index}
-          image={guide.image}
-          title={guide.title}
-          description={guide.description}
-        />
-      ))}
+    <div className="guidesContainer">
+      <h1>Smart Home Guides</h1>
+      <p>Explore our detailed guides on how to set up your smart home devices, making your home smarter and more secure.</p>
+      
+      <div className="guidesList">
+        {/* Ring Doorbell Guide */}
+        <div className="guideCard">
+          <img 
+            src="https://i.imgur.com/E8f5OCY.jpg" 
+            alt="Ring Battery Doorbell" 
+            className="guideThumbnail"
+          />
+          <h2>Battery Doorbell Ring Setup</h2>
+          <p>Learn how to set up your Battery Doorbell Ring for enhanced home security.</p>
+          <Link to="/ringdoorbell" className="readMore">Read More</Link>
+        </div>
+
+        {/* Additional Guides can go here */}
+        {/* Example: */}
+        {/* <div className="guideCard">
+          <img 
+            src="https://example.com/smart-light-bulb-thumbnail.jpg" 
+            alt="Smart Light Bulb" 
+            className="guideThumbnail"
+          />
+          <h2>Smart Light Bulb Setup</h2>
+          <p>Get your smart lights set up for hands-free control.</p>
+          <Link to="/smartlightbulb" className="readMore">Read More</Link>
+        </div> */}
+      </div>
     </div>
   );
 };

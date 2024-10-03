@@ -1,9 +1,170 @@
-.guide-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop view */
-    gap: 30px;
-    padding: 20px;
-  }
+/* SmartHomeGuides.css */
+
+.guidesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.guidesContainer h1 {
+  font-size: 2.5rem;
+  color: #023e8a;
+}
+
+.guidesContainer p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.guidesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.guideCard {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guideThumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.guideCard h2 {
+  font-size: 1.5rem;
+  color: #00b4d8;
+  margin-bottom: 10px;
+}
+
+.guideCard p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.readMore {
+  font-size: 1rem;
+  color: #0077b6;
+  text-decoration: none;
+  border: 1px solid #0077b6;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.readMore:hover {
+  background-color: #0077b6;
+  color: white;
+}
+
+
+  /* SmartHomeGuides.css */
+.guidePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerSection {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.bannerSection h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.deviceIntro {
+  text-align: center;
+  width: 100%; /* Ensure the paragraph takes up the full width of its container */
+  margin: 0 auto; /* This ensures it centers horizontally */
+  padding: 20px 0; /* Optional: Adds some padding for spacing */
+  font-size: 2rem;
+  color: #333;
+  max-width: 1000px; /* Optional: Limits the width of the paragraph for better readability */
+}
+.setupGuide {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.setupGuide h2 {
+  font-size: 2.2rem;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.step {
+  margin-bottom: 30px;
+}
+
+.step h3 {
+  font-size: 1.8rem;
+  color: #00b4d8;
+}
+
+.step p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.deviceFeatures {
+  width: 100%;
+  max-width: 800px;
+}
+
+.deviceFeatures h2 {
+  font-size: 2.2rem;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.deviceFeatures p,
+.deviceFeatures ul {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: justify;
+}
+
+.deviceFeatures ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.deviceFeatures h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #00b4d8;
+}
+
   
   @media screen and (max-width: 768px) {
     .guide-grid {

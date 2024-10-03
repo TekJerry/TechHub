@@ -25,7 +25,7 @@ const Navbar = () => {
             <Link to="/features">Features</Link>
             {dropdownOpen && (
               <ul className="dropdown-menu">
-                <li><Link to="/features/guides">Smart Home Guides</Link></li>
+                <li><Link to="/features/smarthomeguides">Smart Home Guides</Link></li>
                 <li><Link to="/features/recommendations">Device Recommendations</Link></li>
                 <li><Link to="/features/tutorials">Video Tutorials</Link></li>
                 <li><Link to="/features/sales">Sales & Discounts</Link></li>

@@ -32,6 +32,12 @@
     text-align: center;
   }
   
+  .info-link {
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit color so that link doesn't change text color */
+    display: block; /* Make the link wrap the entire rectangle */
+  }
+  
 
   @media screen and (max-width: 1458px) {
     .info-grid {
